@@ -5,5 +5,5 @@ set -o nounset
 set -o pipefail
 
 python manage.py migrate --noinput
-gunicorn blog.wsgi:application
+gunicorn django_project.wsgi:application
 
