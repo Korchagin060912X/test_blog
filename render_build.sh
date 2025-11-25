@@ -4,6 +4,8 @@ set -o errexit
 set -o nounset
 set -o pipefail
 
+cd "$(dirname "$0")"
+
 pip install -r requirements.txt
 python manage.py collectstatic --noinput
 
